@@ -1,6 +1,12 @@
 # File Encoding Converter
 
+Copyright (c) 2023 [aki-mia](https://github.com/aki-mia)
+
 このツールは、指定された .txt または .tsv ファイルの改行コードをLFに変換し、文字コードをUTF-8 (BOMなし) に変換した上で、ファイル名の冒頭に`check_`をつけて同じディレクトリに新しいファイルとして保存します。
+
+## ライセンス
+
+本プロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
 
 ## 動作環境
 - OS: Windows 10 Proで動作確認をしています。
