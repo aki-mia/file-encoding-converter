@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "convert-file-to-utf8lf"
+version = "0.1.0"
+description = ""
+authors = ["Aki <13302223+aki-mia@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "convert_file_to_utf8lf"}]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.11"
+chardet = "^5.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
