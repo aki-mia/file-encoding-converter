@@ -67,10 +67,10 @@ This project is released under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## How to build (pyinstaller)
 
-After installing the necessary packages with `poetry install`, follow the steps below. 1.
+After installing the necessary packages with `poetry install`, follow the steps below.
 
-Go to the root directory of the project. 2.
-Execute the following command to start the build.
+1. Go to the root directory of the project.
+2. Execute the following command to start the build.
 
 ```
 pyinstaller convert_file_to_utf8lf.py --onefile --clean
