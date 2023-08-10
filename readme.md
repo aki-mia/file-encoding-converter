@@ -46,3 +46,56 @@ pyinstaller convert_file_to_utf8lf.py --onefile --clean
 ### バージョン情報
 - 現在のバージョン: 1.0.0
 - 最終更新日: 2023-08-10
+
+---
+
+English Translation
+
+# File Encoding Converter
+
+Copyright (c) 2023 [aki-mia](https://github.com/aki-mia)
+
+This tool converts the newline code of a given .txt or .tsv file to LF and the character encoding to UTF-8 (no BOM), then saves it as a new file in the same directory with the file name prefixed with `check_`.
+
+## License
+
+This project is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Operating Environment
+- OS: Windows 10 Pro has been tested.
+- Python 3.10.12
+
+## How to build (pyinstaller)
+
+After installing the necessary packages with `poetry install`, follow the steps below. 1.
+
+Go to the root directory of the project. 2.
+Execute the following command to start the build.
+
+```
+pyinstaller convert_file_to_utf8lf.py --onefile --clean
+```
+
+3. a built executable file (convert_file_to_utf8lf.exe) will be generated in the `dist` directory.
+
+## Usage.
+1. drag and drop the .txt or .tsv file you wish to convert into the `convert_file_to_utf8lf.exe` file 2.
+When the process is completed, the file will be saved in the same directory with the file name "check_source_filename.tsv". 3.
+3. an `error.txt` file will be generated if an error occurs.
+
+### Notes
+- This tool works when the original file is UTF-8, Shift-JIS(ANSI), EUC-JP, or ISO2022-JP. It automatically detects the encoding, converts the line feed code to LF, and saves the file as UTF-8 (without BOM). It does not check that the file is tab delimited.
+- Only accepts .txt or .tsv files.
+
+### Disclaimer
+- This software is provided "AS IS" and without warranty of any kind, either express or implied. In particular, this does not include any implied warranties of merchantability, fitness for a particular purpose, or non-infringement of third party rights. the risks associated with the use of this software are the sole responsibility of the user.
+
+- The author provides no support related to this software and assumes no responsibility for any damages resulting from its use. The user shall use this software at his/her own risk and the author shall not be liable for any damages resulting from the use of this software.
+
+### About the Author
+- Github: [aki-mia](https://github.com/aki-mia)
+- Linkedin: [Akihiro Tanii](https://www.linkedin.com/in/akihirotanii/)
+
+### Version Information
+- Current version: 1.0.0
+- Last updated: 2023-08-10
